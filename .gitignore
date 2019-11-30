@@ -7,9 +7,11 @@ __pycache__/
 # MacOS
 **/.DS_Store/*
 
-# GRIB/tar.gz files - datasets
+# GRIB/tar.gz/idx files - datasets
 **/*.grib
+**/*.idx
 **/*.tar.gz
+test_data/
 
 # code settings
 **/*.vscode
