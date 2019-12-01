@@ -10,6 +10,7 @@ __pycache__/
 # images
 **/*.png
 !frankfurt.png
+!server/assets/*.png
 
 # GRIB/tar.gz/idx files - datasets
 **/*.grib
