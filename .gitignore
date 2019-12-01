@@ -23,6 +23,7 @@ test_data/
 # compressed files
 **/*.zip
 **/*.tar.gz
+!Ubreathe-html.zip
 
 # code settings
 **/*.vscode
