@@ -3,9 +3,11 @@ import numpy as np
 
 def pickle2data(name):
 
-    fl_name_lat = name + '.lat.pkl'
-    fl_name_long = name + '.long.pkl'
-    fl_name_val = name + '.val.pkl'
+    dataset_folder = 'out_air'
+
+    fl_name_lat =  '{}/{}.lat.pkl'.format(dataset_folder, name)
+    fl_name_long =  '{}/{}.long.pkl'.format(dataset_folder, name)
+    fl_name_val =  '{}/{}.val.pkl'.format(dataset_folder, name)
     
     with open(fl_name_lat, 'rb') as fl:
         lat = pickle.load(fl)

@@ -20,12 +20,23 @@ c = cdsapi.Client()
 outfile_name = '{}.{}'.format(args.outfile, args.format)
 dataset_options = {
     'format': args.format,
-    'variable':
-    ['2m_dewpoint_temperature', '2m_temperature', 'forecast_albedo'],
+    'variable': ['skin_temperature'],
     'product_type': 'monthly_averaged_reanalysis',
     'time': '00:00',
     'year': '2019',
     'month': '04'
 }
 
-c.retrieve(args.dataset, dataset_options, outfile_name)
+options = {
+        'format':'grib',
+        'product_type':'monthly_averaged_reanalysis',
+        'variable':[
+            '2m_dewpoint_temperature','2m_temperature','forecast_albedo',
+            'skin_temperature'
+        ],
+        'year':'2019',
+        'month':'04',
+        'time':'00:00'
+}
+
+c.retrieve(args.dataset, options, outfile_name)

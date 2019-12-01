@@ -7,11 +7,21 @@ __pycache__/
 # MacOS
 **/.DS_Store/*
 
+# images
+**/*.png
+!frankfurt.png
+
 # GRIB/tar.gz/idx files - datasets
 **/*.grib
+**/*.grib2
 **/*.idx
 **/*.tar.gz
+**/*.xml
 test_data/
+
+# compressed files
+**/*.zip
+**/*.tar.gz
 
 # code settings
 **/*.vscode
