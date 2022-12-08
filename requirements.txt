@@ -1,6 +1,6 @@
 Cartopy==0.17.0
 cdsapi==0.2.5
-certifi==2019.11.28
+certifi==2022.12.7
 cffi==1.13.2
 cfgrib==0.9.7.4
 cftime==1.0.4.2
